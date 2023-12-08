@@ -211,7 +211,7 @@ export const FormComponent = () => {
                   <div style={{ color: "red" }}>{errors.password}</div>
                 )}
               </FormGroup>
-              <Button onClick={handleFormSubmit} type="button">
+              <Button disabled={isLoading} onClick={handleFormSubmit} type="button">
                 Next
               </Button>
             </div>

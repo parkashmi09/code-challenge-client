@@ -158,7 +158,7 @@ const EditForm = () => {
               <div style={{ color: "red" }}>{errors.agreeTerms}</div>
             )}
           </FormGroup>
-          <Button type="submit">{isLoading ? "Saving..." : "Save"}</Button>
+          <Button disabled={isLoading} type="submit">{isLoading ? "Saving..." : "Save"}</Button>
         </form>
       </Container>
     </ParentWrapper>
